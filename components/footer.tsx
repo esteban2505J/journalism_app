@@ -36,8 +36,8 @@ export default function Footer() {
             <p className="text-sm opacity-70">
               Para reportes o información:
               <br />
-              <a href="mailto:info@armeniahomicidios.co" className="hover:opacity-100 transition-opacity">
-                info@armeniahomicidios.co
+              <a href="tel:+573146657469 Andrey" className="hover:opacity-100 transition-opacity">
+                +57 314 6657469 
               </a>
             </p>
           </div>

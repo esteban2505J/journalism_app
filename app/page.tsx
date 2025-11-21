@@ -14,8 +14,8 @@ export default function Home() {
       <CarouselHero />
       <ArmeniaSection />
       <StatsSection />
-      <NewsGrid />
       <VideoUploadSection />
+      <NewsGrid />
       <Footer />
     </div>
   )

@@ -94,94 +94,11 @@ export default function VideoUploadSection() {
   }
 
   return (
-    <section id="videos" className="py-20 bg-background">
+    <section id="videos" className="py- bg-background">
       <div className="max-w-7xl mx-auto px-4">
-        <h3 className="text-4xl font-bold text-foreground mb-12 text-balance">Galería de Videos</h3>
-
-        {/* Upload Form - Only for periodistas */}
-        {isPeriodista ? (
-          <div className="mb-16 p-8 rounded-xl border border-red-600/30 bg-red-600/5">
-            <h4 className="text-2xl font-bold text-foreground mb-6">Compartir Video</h4>
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <div>
-                <label className="block text-sm font-semibold text-foreground mb-2">Título del Video *</label>
-                <input
-                  type="text"
-                  required
-                  value={formData.title}
-                  onChange={(e) => setFormData({ ...formData, title: e.target.value })}
-                  className="w-full px-4 py-3 bg-background border border-accent/30 rounded-lg focus:outline-none focus:border-red-600 text-foreground"
-                  placeholder="Ej: Entrevista a víctimas"
-                />
-              </div>
-
-              <div>
-                <label className="block text-sm font-semibold text-foreground mb-2">
-                  URL del Video (YouTube, Vimeo, etc.) *
-                </label>
-                <input
-                  type="url"
-                  required
-                  value={formData.url}
-                  onChange={(e) => setFormData({ ...formData, url: e.target.value })}
-                  className="w-full px-4 py-3 bg-background border border-accent/30 rounded-lg focus:outline-none focus:border-red-600 text-foreground"
-                  placeholder="https://youtube.com/watch?v=..."
-                />
-              </div>
-
-              <div>
-                <label className="block text-sm font-semibold text-foreground mb-2">Descripción</label>
-                <textarea
-                  value={formData.description}
-                  onChange={(e) => setFormData({ ...formData, description: e.target.value })}
-                  className="w-full px-4 py-3 bg-background border border-accent/30 rounded-lg focus:outline-none focus:border-red-600 text-foreground resize-none"
-                  rows={4}
-                  placeholder="Describe el contenido del video..."
-                />
-              </div>
-
-              {error && (
-                <div className="p-3 bg-red-600/20 border border-red-600/50 rounded-lg text-red-600 text-sm">
-                  {error}
-                </div>
-              )}
-              {success && (
-                <div className="p-3 bg-green-600/20 border border-green-600/50 rounded-lg text-green-600 text-sm">
-                  Video guardado exitosamente
-                </div>
-              )}
-
-              <button
-                type="submit"
-                disabled={submitting}
-                className="w-full px-6 py-3 bg-red-600 hover:bg-red-700 disabled:opacity-50 text-white font-semibold rounded-lg transition-colors"
-              >
-                {submitting ? "Guardando..." : "Subir Video"}
-              </button>
-            </form>
-          </div>
-        ) : userRole ? (
-          <div className="mb-16 p-8 rounded-xl border border-yellow-600/30 bg-yellow-600/5">
-            <p className="text-yellow-600 font-semibold">
-              Solo periodistas verificados pueden subir videos. Accede a tu cuenta de periodista para compartir
-              contenido.
-            </p>
-          </div>
-        ) : (
-          <div className="mb-16 p-8 rounded-xl border border-blue-600/30 bg-blue-600/5">
-            <p className="text-blue-600 font-semibold">
-              Inicia sesión como periodista para compartir videos.{" "}
-              <a href="/auth/login" className="underline font-bold">
-                Inicia sesión aquí
-              </a>
-            </p>
-          </div>
-        )}
-
-        {/* Videos Grid */}
+        <h3 className="text-4xl font-bold text-foreground mb-12 text-balance">Galería de Videos</h3>  
         <div>
-          <h4 className="text-2xl font-bold text-foreground mb-8">Videos Compartidos</h4>
-
+    
           {loading ? (
             <div className="text-center py-12 text-muted-foreground">Cargando videos...</div>
           ) : videos.length === 0 ? (

@@ -1,8 +1,12 @@
 "use client"
+
 import Header from "@/components/header"
 import CarouselHero from "@/components/carousel-hero"
 import ArmeniaSection from "@/components/armenia-section"
 import StatsSection from "@/components/stats-section"
+// 1. Importamos el nuevo componente.
+// Asegúrate de que la ruta coincida con el nombre de tu archivo (ej: reportaje-completo.tsx)
+import ReportajeCompleto from "@/components/ReportajeCompleto" 
 import NewsGrid from "@/components/news-grid"
 import VideoUploadSection from "@/components/video-upload-section"
 import Footer from "@/components/footer"
@@ -11,11 +15,23 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <CarouselHero />
-      <ArmeniaSection />
-      <StatsSection />
-      <VideoUploadSection />
-      <NewsGrid />
+      
+      <main>
+        <CarouselHero />
+        
+        <ArmeniaSection />
+        
+        <StatsSection />
+
+        {/* 2. Aquí insertamos el Reportaje. 
+            Queda perfecto aquí porque expande la información de las estadísticas */}
+        <ReportajeCompleto />
+
+        <VideoUploadSection />
+
+        <NewsGrid />
+      </main>
+
       <Footer />
     </div>
   )

@@ -31,7 +31,7 @@ export default function Header() {
             <span className="text-white font-bold text-lg">A</span>
           </div>
           <div>
-            <h1 className="text-2xl font-bold text-foreground">Armenia Homicidios</h1>
+            <h1 className="text-2xl font-bold text-foreground">Armenia Crisis de Seguridad en 2025</h1>
             <p className="text-xs text-muted-foreground">Investigación Periodística</p>
           </div>
         </Link>

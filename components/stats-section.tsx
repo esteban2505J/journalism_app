@@ -7,7 +7,7 @@ export default function StatsSection() {
       color: "from-red-600 to-red-700",
     },
     {
-      number: "83",
+      number: "75",
       label: "Homicidios en 2024",
       period: "Todo el año",
       color: "from-amber-600 to-amber-700",

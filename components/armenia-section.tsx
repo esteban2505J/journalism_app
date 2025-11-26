@@ -30,7 +30,7 @@ export default function ArmeniaSection() {
             <p className="text-sm text-muted-foreground mt-1">Aumento superior al 60% vs 2024</p>
           </div>
           <div className="p-6 bg-accent/5 border border-accent/20 rounded-lg">
-            <div className="text-4xl font-bold text-red-600 mb-2">83</div>
+            <div className="text-4xl font-bold text-red-600 mb-2">75</div>
             <p className="text-muted-foreground font-semibold">Homicidios en 2024</p>
             <p className="text-sm text-muted-foreground mt-1">Período completo del año</p>
           </div>
@@ -95,7 +95,7 @@ export default function ArmeniaSection() {
             <div className={`mt-8 transition-all duration-500 ${isExpanded ? "opacity-0 scale-95 h-0 overflow-hidden" : "opacity-100"}`}>
               <div className="relative aspect-video md:aspect-auto md:h-96 rounded-2xl overflow-hidden shadow-2xl border-4 border-red-900/30">
                 <Image
-                  src="/crisis-armenia.jpeg"
+                  src="\crisis-armenia.jpeg"   
                   alt="Crisis de seguridad en Armenia 2025"
                   fill
                   className="object-cover"
@@ -132,7 +132,7 @@ export default function ArmeniaSection() {
             <div className={`mt-8 transition-all duration-700 ${isExpanded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8 h-0 overflow-hidden"}`}>
               <div className="relative aspect-video md:aspect-auto md:h-96 rounded-2xl overflow-hidden shadow-2xl border-4 border-red-900/30">
                 <Image
-                  src="/crisis-armenia.jpeg"
+                  src="\crisis-armenia.jpeg"
                   alt="Crisis de seguridad en Armenia 2025"
                   fill
                   className="object-cover"

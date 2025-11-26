@@ -37,7 +37,7 @@ export default function Footer() {
               Para reportes o información:
               <br />
               <a href="tel:+573146657469 Andrey" className="hover:opacity-100 transition-opacity">
-                +57 314 6657469 
+                +57 314 6657469
               </a>
             </p>
           </div>

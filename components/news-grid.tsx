@@ -12,7 +12,7 @@ export default function NewsGrid() {
         "Análisis detallado de cómo el control de puntos de venta de drogas y las riñas callejeras son los principales motores de homicidios en barrios como Pinares y Los Quindos.",
       category: "Investigación",
       date: "15 de noviembre, 2025",
-      image: "/microtr-fico-drogas-barrios-peligro.jpg",
+      image: "/images/microtrafico.jpeg",
     },
     {
       id: 2,
@@ -21,7 +21,7 @@ export default function NewsGrid() {
         "Según la teniente Ingrid Rojas, el desempleo y la falta de oportunidades para jóvenes entre 20-35 años alimenta la participación en actividades ilícitas.",
       category: "Análisis",
       date: "14 de noviembre, 2025",
-      image: "/j-venes-desempleo-barrio-calle-comunidad.jpg",
+      image: "/images/desempleoJuvenil.jpeg",
     },
     {
       id: 3,
@@ -30,7 +30,7 @@ export default function NewsGrid() {
         "La Fiscalía identifica el sicariato y las disputas entre bandas criminales como los principales motores de la violencia en Armenia durante 2025.",
       category: "Fiscalía",
       date: "13 de noviembre, 2025",
-      image: "/investigaci-n-policial-criminal-stica-escena-crime.jpg",
+      image: "/images/levantamiento.jpeg",
     },
     {
       id: 4,
@@ -39,7 +39,7 @@ export default function NewsGrid() {
         "Policía y Fiscalía fortalecen operativos coordinados para combatir la violencia, aunque la desconfianza y percepción de inseguridad continúa en aumento entre los ciudadanos.",
       category: "Reportaje",
       date: "12 de noviembre, 2025",
-      image: "/polic-a-operativo-seguridad-urbana-patrulla.jpg",
+      image: "/images/operativos.jpeg",
     },
   ])
   const [loading, setLoading] = useState(true)

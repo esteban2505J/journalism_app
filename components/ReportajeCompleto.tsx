@@ -78,7 +78,7 @@ export default function ReportajeCompleto() {
                  title="Análisis de Seguridad"
                  subtitle="Ingrid Rojas, Teniente Policía Metropolitana"
                  duration="3:45"
-                 src="/audios/ingrid.mpeg"
+                 src="/audios/ingrid.mp3"
                />
             </div>
 
@@ -139,7 +139,7 @@ export default function ReportajeCompleto() {
                  title="Investigación en Curso"
                  subtitle="Reporte Fiscalía Seccional"
                  duration="4:12"
-                 src="/audios/fiscalia.mpeg"
+                 src="/audios/fiscalia.mp3"
                />
             </div>
 

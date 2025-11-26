@@ -23,8 +23,7 @@ export default function Home() {
         
         <StatsSection />
 
-        {/* 2. Aquí insertamos el Reportaje. 
-            Queda perfecto aquí porque expande la información de las estadísticas */}
+  
         <ReportajeCompleto />
 
         <VideoUploadSection />
